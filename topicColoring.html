@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <div>
+        <p data-topic-name="discussion">General discussion</p>
+        <p data-topic-name="bugs">Bugs</p>
+        <p data-topic-name="animals">Animals</p>
+    </div>
+
+    <script>
+        function newMessage(topicName) {
+            // Write your code here
+            let tag = document.getElementsByTagName('p')
+            console.log(tag)
+            let data = tag.getAttribute("data-topic-name")
+            console.log(data);
+            //???????????
+        }
+
+        // Example case
+        newMessage("discussion");
+    </script>
+    
+</body>
+</html>
